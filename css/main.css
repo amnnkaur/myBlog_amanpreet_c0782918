@@ -1,0 +1,80 @@
+/* External CSS */
+html {
+    scroll-behavior: smooth;
+  }
+  /* styles for body */
+body { 
+    background-color: #354649;
+}
+/* styles for image */
+img{
+    max-width: 100%;
+}
+
+/* styles for adopting mobile-first strategy */
+
+/* Id assigned in html files && Style for id= container */
+#container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styles for logo */
+header {
+    margin-top: 0.2em;
+    background-color: black;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+
+/* Styles for nav bar containing links */
+nav {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+   /* margin-top: -1.5em; */
+}
+
+
+/* styles for mobile class */
+.mobile{
+    display: inline;
+}
+
+/* styles for the desktop */
+.desktop{
+    display: none;
+}
+
+
+/* Styles for main div containing the information */
+main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    margin-top: 0.5em;
+    padding: 1em;
+    /* border-radius: 2em 0 2em 0; */
+    opacity: 0.85;
+    background-color: #A3C6C4;
+}
+
+/* styles for footer */
+footer {
+    font-size: .7em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+/* style for media query for tablet viewport target- min width 480px */
+@media only screen and (min-width:688px) {
+    
+}
+
+/* media query for desktop view port*/
+@media only screen and (min-width:769px) {
+   
+
+}
