@@ -4,13 +4,31 @@ html {
   }
   /* styles for body */
 body { 
-    background-color: #354649;
+    background: -webkit-linear-gradient(90deg,#1d1d1c, #A3C6C4); /* Safari and Chrome */
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
 }
 /* styles for image */
 img{
     max-width: 100%;
 }
 
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+section{
+
+    width: 100%;
+    height: 95vh;
+
+}
 /* styles for adopting mobile-first strategy */
 
 /* Id assigned in html files && Style for id= container */
@@ -31,13 +49,48 @@ header {
 
 /* Styles for nav bar containing links */
 nav {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
     font-size: 1.25em;
     font-weight: bold;
     text-align: center;
+   
    /* margin-top: -1.5em; */
 }
 
+nav ul{
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+nav li {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c3334;
+    border-radius: .5em;
+    margin: 0.3em;
+    padding: 0.4em;
+    list-style-type: none;
+    box-shadow: 2px 2px 12px #1d1d1c;
+}
+
+
+nav li a:link{
+    color: #A3C6C4 ;
+}
+/* when the link is visible */
+nav li a:visited{
+    color:#A3C6C4;
+}
+
+/* pseudo class when hover in over link */
+nav li a:hover{
+    font-style: italic;
+    color: #D3AC2B;
+}
+nav li a:active{
+    color: #1c3334;
+} 
 
 /* styles for mobile class */
 .mobile{
@@ -59,6 +112,7 @@ main {
     /* border-radius: 2em 0 2em 0; */
     opacity: 0.85;
     background-color: #A3C6C4;
+    box-shadow: 2px 2px 12px #1d1d1c;
 }
 
 /* styles for footer */
@@ -70,11 +124,114 @@ footer {
 
 /* style for media query for tablet viewport target- min width 480px */
 @media only screen and (min-width:688px) {
+
+    body {
+        background: -webkit-linear-gradient(90deg,#1d1d1c, #A3C6C4); /* Safari and Chrome */
+        background-attachment: fixed;
+    }
     
 }
 
 /* media query for desktop view port*/
 @media only screen and (min-width:769px) {
    
+    body {
+        background: -webkit-linear-gradient(90deg,#1d1d1c, #A3C6C4); /* Safari and Chrome */
+        background-attachment: fixed;
+    }
+
+    #container{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* styles for header */
+    header{
+        text-align: left;
+    }
+    /* styles for nav */
+    nav {
+        float: right;
+        margin-top: -7em;
+        margin-right: 3em;
+        margin-bottom: 0;
+        width: 65%;
+    }
+    /* styles for ul in nav */
+    nav ul {
+        margin: 0;
+        padding-left: 0.5%;
+        padding-right: 0.5%;
+    }
+
+    /* styles for li in nav */
+    nav li {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        width: 20%;
+    }
+
+    /* styles for anchor tag <a> in nav */
+    nav li a {
+        display: inline-block;
+        padding: 0.7em;
+        text-shadow: 0.2em 0.1em #1d1d1c;
+    }
+
+    /* styles for the main */
+    main{
+      background-color: #A3C6C4;
+      box-shadow: 2px 2px 12px #1d1d1c;
+      
+    }
+
+    /* styles for paragraph inside main */
+    main p {
+        color: white;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    /* styles for item class */
+    /* .items{
+        margin-bottom: 6em;
+    } */
+
+
+   
+    /* styles for pseudo-class  format -  selector:pseudo-class{}*/
+    /* when the link is not visible */
+    nav li a:link{
+        color: lightslategray;
+    }
+    /* when the link is visible */
+    nav li a:visited{
+        color:teal;
+    }
+
+    /* pseudo class when hover in over link */
+    nav li a:hover{
+        font-style: italic;
+        color: black;
+    }
+    nav li a:active{
+        color: #404040;
+    } 
+    
+
+    figure img{
+        height: 15em;
+        opacity: 0.7;
+    }
+
+    /* styles to remove transparency on hover */
+
+    figure img:hover{
+        opacity: 1;
+    }
+
 
 }
