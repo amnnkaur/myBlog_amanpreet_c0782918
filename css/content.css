@@ -71,7 +71,7 @@ nav li a:visited{
 /* pseudo class when hover in over link */
 nav li a:hover{
     font-style: italic;
-    color: #D3AC2B;
+    color: indianred;
 }
 nav li a:active{
     color: #1c3334;
@@ -495,7 +495,7 @@ img{
     /* pseudo class when hover in over link */
     nav li a:hover{
         font-style: italic;
-        color: #D3AC2B;
+        color: indianred;
     }
     nav li a:active{
         color: #1c3334;
