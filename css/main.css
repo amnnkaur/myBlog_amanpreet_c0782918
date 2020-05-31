@@ -71,7 +71,7 @@ nav li a:visited{
 /* pseudo class when hover in over link */
 nav li a:hover{
     font-style: italic;
-    color: #D3AC2B;
+    color: indianred;
 }
 nav li a:active{
     color: #1c3334;
@@ -130,8 +130,7 @@ main {
     padding: 1em;
     /* border-radius: 2em 0 2em 0; */
     opacity: 0.85;
-    background-color: #A3C6C4;
-    box-shadow: 2px 2px 12px #1d1d1c;
+    
 }
 
 /* styles for footer */
@@ -144,6 +143,66 @@ footer {
 img{
     width: 40%;
     height: 40%;
+}
+
+.about-container{
+    width: auto;
+   
+    background-color: #A3C6C4;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px #1d1d1c;
+    display: flex;
+    margin: -7% auto 20px auto;
+    position: relative;
+    margin-top: auto;
+}
+
+.about-text{
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-text h2{
+    color: indianred;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    line-height: 0px;
+
+}
+
+.about-text p{
+    color: #3e6858;
+    font-size: 30px;
+    font-family: myriad pro;
+    font-weight: bold;
+   
+    text-align: center;
+
+}
+
+/* .skills{
+    width: 80%;
+    margin: auto;
+    background-color: #A3C6C4;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px #1d1d1c;
+    display: flex;
+} */
+.skills{
+    display: none;
+}
+
+.skills h2{
+    color: indianred;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    line-height: 0px;
+   
 }
 
 /* style for media query for tablet viewport target- min width 480px */
@@ -199,7 +258,7 @@ img{
     /* pseudo class when hover in over link */
     nav li a:hover{
         font-style: italic;
-        color: #D3AC2B;
+        color: indianred;
     }
     nav li a:active{
         color: #1c3334;
@@ -247,7 +306,63 @@ img{
         margin-top: 0.7em;
 
     }
+
+    .about-container{
+        width: 80%;
+        /* height: 330px; */
+        background-color: #A3C6C4;
+        border-radius: 20px;
+        box-shadow: 2px 2px 12px #1d1d1c;
+        display: flex;
+        margin: -7% auto 20px auto;
+        position: relative;
+    }
     
+    .about-text{
+        width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-text h2{
+        color: indianred;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        line-height: 0px;
+    
+    }
+
+    .about-text p{
+        color: #3e6858;
+        font-size: 30px;
+        font-family: myriad pro;
+        font-weight: bold;
+       
+        text-align: center;
+    
+    }
+
+    .skills{
+        width: 80%;
+        margin: auto;
+        background-color: #A3C6C4;
+        border-radius: 20px;
+        box-shadow: 2px 2px 12px #1d1d1c;
+        display: flex;
+    }
+
+    .skills h2{
+        color: indianred;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        line-height: 0px;
+       
+    }
+
 }
 
 /* media query for desktop view port*/
